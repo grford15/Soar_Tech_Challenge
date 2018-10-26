@@ -30,7 +30,7 @@ class ApiContainer extends Component{
     let url = `https://api.github.com/search/repositories?q=${this.state.value}`
     fetch(url)
     .then(response => response.json())
-    .then(items => this.setState({items: items}))
+    .then(items => this.setState({items: items["items"]}))
     .catch(err => console.log(err));
   }
 
@@ -48,7 +48,7 @@ class ApiContainer extends Component{
             <input type="submit" value="Submit" />
           </form>
         </div>
-        <RepoComponent />
+        <RepoComponent items = {this.state.items}/>
       </React.Fragment>
       );
 
