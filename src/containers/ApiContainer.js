@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import RepoComponent from '../components/RepoComponent';
+import Header from '../components/Header';
 
 class ApiContainer extends Component{
 
@@ -40,12 +41,14 @@ class ApiContainer extends Component{
 
     return (
       <React.Fragment>
-        <div>
+      <Header />
+        <div id = "search-bar">
           <form onSubmit={this.handleSubmit}>
-            <label>Repo Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <label id = "input-lbl">Repo Name:
+            <input type="text" value={this.state.value} onChange={this.handleChange}
+            id="search-box" />
             </label>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" id="submit-btn" />
           </form>
         </div>
         <RepoComponent items = {this.state.items}/>
