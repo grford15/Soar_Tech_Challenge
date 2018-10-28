@@ -3,35 +3,25 @@
 A web app allowing the user to search GitHub repositories, using the GitHub search API.
 This will form the basis for a technical discussion around your chosen approach.
 
-## How should you build it
+## How to run my App
 
-Feel free to spend as little or as much time as you like, however we would advise not
-spending more than 2-3 hours. You do not have to complete the entire exercise. Use
-whatever web technology, framework, packages, build system and libraries that you feel
-comfortable with to build it. Extra brownie points will be given if you can build the
-solution in our tech stack - but it’s not essential!
-Use the GitHub search API to obtain the required results. Use your imagination to figure
-out how best to utilise the API and display & sort the results, e.g. sort by stars/forks,
-paging, infinite scrolling or whatever other features you want.
-Please ensure that there are no globally installed dependencies required to build/run your
-app. If you have to have them please explain why. This avoids environment issues when
-we are trying to build your solution.
+- Click the green Clone or Download button and copy the link
 
-## Some tips:
+- Go into your terminal and in whatever folder you choose, run git clone (the clone link)
 
-• Use this as an opportunity to demonstrate your technical knowledge and
-  engineering skills.
+- CD into the Soar_Tech_Challenge folder
 
-• We hope to see a usable UI and clear code, demonstrating good, modern
-  engineering practices.
+- run npm install
 
-• You decide how to split your time on the various engineering tasks that would be
-  needed for such a web app. For example, you may decide to spend more time on
-  creating a sleek UI or you may prefer to demonstrate your solid testing skills.
+- run npm start
 
-• Remember to provide appropriate documentation on: How to build, test and run
-  your submission; Anything you would have liked to implement with more time,
-  pending issues; Anything else you feel is worth mentioning.
+- The app should open in your browser, from there type whatever you want to search in the input and click submit
 
-Please submit your code to your own personal GitHub repository and reply to the
-email that contained this challenge with a link to the repository by the agreed completion date.
+- The app should now show results for the keyword you searched
+
+## What I would have worked on next 
+
+- I would possibly change the layout of how the search results are returned. I used an Unordered List initially working through the app and stuck with it, but I did start looking into react Tables. The data might have been better in tabular form, but I had to decide if the time spent on changing that would really improve it that much. 
+
+- With more time I would implement a sort function. Reading into a few of the react-table's that are avaiable I think they have built in sorting features, but apart from them I would build a function myself. I think I would use 2 drop down menu's, 1. for what to sort the results by (i.e Stars, Forks) and then 2. ascending/descending. I would call the function with a sort button.  
+
