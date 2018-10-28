@@ -5,7 +5,7 @@ const RepoComponent = (props) => {
 
   //if props = nothing
   //return instructions to search
-  if(props.items.length < 1){
+  if(props.items === undefined || props.items.length < 1  ){
     return (
       <h1 className="repo-list">Please use the search bar to search for Repo's</h1>
     )
@@ -14,9 +14,14 @@ const RepoComponent = (props) => {
     //return the props list
     return (
       <div className="repo-list">
-        <ul>
+        <ul className="u-list">
           {props.items.map(repo => (
-            <li key={repo.id}>Repo Name: {repo.name} | <a href={repo.url} id="links">Repo Link</a></li>
+            <li key={repo.id}><b>Repo Name:</b> {repo.name} |
+            <b> Language: </b> {repo.language} |
+            <b> Stars: </b> {repo.stargazers_count} |
+            <b> Forks: </b> {repo.forks} |
+            <a href={repo.html_url} id="links"> Repo Link</a>
+            </li>
           ))}
         </ul>
       </div>
