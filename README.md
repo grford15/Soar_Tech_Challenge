@@ -15,7 +15,7 @@ This will form the basis for a technical discussion around your chosen approach.
 
 - run npm start
 
-- The app should open in your browser, from there type whatever you want to search in the input and click submit
+- The app should open in your browser, if not it will run on http://localhost:3000/ from there type whatever you want to search in the input and click submit
 
 - The app should now show results for the keyword you searched
 
